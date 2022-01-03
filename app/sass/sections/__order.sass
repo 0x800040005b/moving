@@ -1,0 +1,118 @@
+.order
+  padding-bottom: 115px
+  background-color: #F6FBFF
+
+  &-block
+    display: flex
+
+    flex-wrap: wrap
+
+  &-form
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+    &__left
+      margin-right: 110px
+    &__right
+      align-self: flex-start
+      position: relative
+      top: -75px
+
+    &__checkbox_wrapper
+      margin-top: 40px
+    &__img
+      position: relative
+    &_submit
+      position: absolute
+      bottom: 20%
+      left: 50%
+      padding: 14px 90px
+      min-width: 320px
+      background-color: #ffffff
+      border: none
+      transform: translateX(-50%)
+      font:
+        weight: 500
+        size: 17px
+      line-height: 21px
+      letter-spacing: 0.01em
+      color: #3E4D65
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25)
+      border-radius: 5px
+      transition: all 0.5s ease
+      &:hover
+        cursor: pointer
+        background-color: #61A3D4
+        color: #FFFFFF
+
+    &__input
+      margin-right: 50px
+      border: none
+      border-bottom: 1px solid #3E4D65
+      padding: 7px
+      background: transparent
+      &:focus
+        outline: none
+        border-bottom-color: #2C9AEC
+        &::placeholder
+          color: #2C9AEC
+
+      &:last-child
+        margin-right: 0
+      &::placeholder
+        font:
+          family: "Raleway"
+          size: 16px
+          weight: 500
+        line-height: 160%
+        letter-spacing: 0.01em
+        color: #3E4D65
+
+    &__checkbox
+
+      position: absolute
+      z-index: -1
+      opacity: 0
+
+      & + label
+        &:hover
+          cursor: pointer
+        &::before
+          content: ''
+          display: inline-flex
+          width: 15px
+          height: 15px
+          border: 1px solid #3E4D65
+          border-radius: 2px
+          margin-right: 11px
+
+
+      &:checked + label::before
+        background-image: url("../img/icons/check.svg")
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+
+
+
+
+  &-content
+    &__title
+      font:
+        weight: 500
+        size: 25px
+      line-height: 130%
+      letter-spacing: 0.01em
+      color: $title-color
+      margin-bottom: 43px
+
+    &_small
+      font:
+        weight: normal
+        size: 18px
+      line-height: 22px
+      color: #3E4D65
+      margin-bottom: 45px
+
+    

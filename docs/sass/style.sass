@@ -1,0 +1,101 @@
+@import "config/_reset"
+@import "config/_variables"
+@import "config/_colors"
+@import "config/_fonts"
+@import "templates/_header"
+@import "templates/_footer"
+
+// SECTIONS
+
+@import "sections/_slider"
+@import "sections/_calculate"
+@import "sections/_services"
+@import "sections/_step"
+@import "sections/_shares"
+@import "sections/_order"
+@import "sections/_slogan"
+@import "sections/_park"
+@import "sections/_tariffs"
+@import "sections/_reviews"
+
+
+
+hml, body
+  min-height: 100vh
+  font:
+    family: "Montserrat"
+    weight: 400
+
+
+
+.container
+  width: 100%
+  max-width: 1180px
+  margin: 0 auto
+
+.support
+  &-button
+    width: 96px
+    height: 100px
+    background-color: #85DAEF
+    padding-top: 18px
+    padding-right: 8px
+    padding-bottom: 10px
+    padding-left: 7px
+    margin-bottom: 35px
+    box-shadow: 0 0 3.84615px rgba(0, 0, 0, 0.25)
+    border-radius: 7.69231px
+  &-calculator
+    background-color: #87BEE7
+    position: relative
+  &-discount
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1.53846px solid #87BEE7
+    background-color: #fff
+    position: absolute
+    right: -20%
+    top: -25%
+    width: 40px
+    height: 40px
+    border-radius: 50%
+
+    &__text
+      color: #E41818
+      line-height: 19px
+      font:
+        family: "Raleway"
+        size: 13px
+        weight: bold
+
+  &-block
+    display: flex
+    flex-direction: column
+    position: absolute
+    bottom: 10%
+    left: 0
+
+  &-text
+    text-align: center
+    color: #ffffff
+    font:
+      family: "Raleway"
+      weight: 500
+      size: 13px
+    line-height: 15px
+
+  &-img
+    margin-bottom: 5px
+
+  &-items
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+
+
+
+
+

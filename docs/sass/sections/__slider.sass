@@ -1,0 +1,68 @@
+.slider
+  &-wrapper
+    background-color: #87BEE7
+    position: relative
+    overflow: hidden
+  &-block
+    display: flex
+    width: 786px
+    height: 786px
+    border: 6px solid #FFFFFF
+    border-radius: 50%
+    justify-content: center
+    align-items: center
+    position: absolute
+    bottom: -25%
+    left: 10%
+  &__title
+    line-height: 55px
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.35)
+    margin-bottom: 30px
+    font:
+      size: 45px
+      weight: 700
+  &__text
+    line-height: 140%
+    text-transform: lowercase
+    margin-bottom: 45px
+    max-width: 313px
+    color: #FFFFFF
+    letter-spacing: 0.01em
+    font:
+      size: 25px
+      weight: 500
+
+  &-discount
+    width: 110px
+    height: 108px
+    background-color: #FFFFFF
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    &__text, &__text sub
+      line-height: 48px
+      color: #e41818
+      font:
+        family: "Raleway"
+        size: 35px
+        weight: bold
+  &-order
+    &__link
+      padding: 14px 71px
+      background-color: #FFFFFF
+      letter-spacing: 0.01em
+      color: #3E4D65
+      text-align: center
+      line-height: 21px
+      font:
+        size: 21px
+        weight: 500
+
+  &-img
+    position: relative
+    right: -35%
+    bottom: -5px

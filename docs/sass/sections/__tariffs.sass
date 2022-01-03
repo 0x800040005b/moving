@@ -1,0 +1,110 @@
+.tariffs
+  position: relative
+  padding: 120px 0
+  & .support-block
+    transform: translate(0, 50%)
+    bottom: 50%
+    left: 0
+  &__title
+    line-height: 170%
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    color: #3E4D65
+    font:
+      weight: 500
+      size: 27px
+    & span
+      display: block
+      color: $title-color
+
+  &-table
+    border: 1px solid #0E6CB2
+    border-collapse: collapse
+    width: 100%
+    max-width: 1180px
+
+    &__th
+      text-align: center
+      padding: 27px 10px
+      line-height: 22px
+      color: $title-color
+
+      border-right: 1px solid #0e6cb2
+      border-bottom: 1px solid #0e6cb2
+
+      font:
+        size: 18px
+        weight: 400
+
+    &__col
+      border-left: 1px solid #0E6CB2
+      border-right: 1px solid #0E6CB2
+      text-align: center
+      padding: 20px 0
+      line-height: 160%
+      letter-spacing: 0.01em
+      color: #3E4D65
+      font:
+        family: "Raleway"
+        size: 16px
+        weight: 400
+
+    &_first
+      width: 70%
+      padding-left: 46px
+      text-align: left
+
+    &_two
+      border-top: none
+      margin-bottom: 50px
+      & .tariffs-table
+        &__th
+          border-right: none
+        &__col
+          padding: 20px 0
+        &_second
+          padding: 0
+          padding-right: 20px
+        &_first
+         padding-left: 48px
+        &_width
+          width: 15%
+
+  &-footer
+    max-width: 749px
+    &__text
+      margin-bottom: 25px
+    &__text,&__link
+      line-height: 135%
+      letter-spacing: 0.01em
+      color: #495464
+      font:
+        family: "Raleway"
+        size: 16px
+        weight: normal
+      span sup
+        color: #0E6CB2
+    &__link
+      color: #0e6cb2
+      &-discount
+        color: #0e6cb2
+
+
+
+.accordeon
+  display: block
+  margin-left: auto
+  text-align: right
+  margin-bottom: 30px
+  &-button
+    width: 40px
+    height: 40px
+    border: 1px solid #2C9AEC
+    background-color: #FFFFFF
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3)
+    border-radius: 50%
+    &:hover
+      cursor: pointer
+
+
+

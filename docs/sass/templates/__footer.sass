@@ -1,0 +1,305 @@
+.footer
+
+  &-wrapper
+    background-color: #87BEE7
+    padding-top: 63px
+    padding-bottom: 28px
+    margin-bottom: 15px
+  &-block
+    display: flex
+    align-items: center
+    position: relative
+    //overflow: hidden
+  &-content
+    &__phone
+      line-height: 130%
+      letter-spacing: 0.01em
+      color: #FFFFFF
+      margin-bottom: 50px
+      display: inline-block
+      font:
+        weight: 500
+        size: 25px
+      &::after
+        content: ''
+        transition: all 0.5s ease
+        display: block
+        width: 0
+        height: 2px
+        background-color: #FFFFFF
+        margin-top: 2px
+      &:hover
+        &::after
+          content: ''
+          display: block
+          width: 100%
+
+  &-img
+    position: absolute
+    right: 0
+    top: 63px
+  &-menu
+    margin-bottom: 48px
+    &__list
+      display: flex
+    &__item
+      margin-right: 30px
+      line-height: 24px
+      &:last-child
+        margin-right: 0
+    &__link
+      transition: all 0.5s ease
+      color: #FFFFFF
+      font:
+        size: 20px
+        weight: 500
+      &::after
+        content: ''
+        transition: all 0.5s ease
+        display: block
+        width: 0
+        height: 2px
+        background-color: #FFFFFF
+        margin-top: 2px
+      &:hover
+        &::after
+          content: ''
+          display: block
+          width: 100%
+  &-address
+    line-height: 160%
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    margin-bottom: 16px
+    font-feature-settings: 'pnum' on, 'lnum' on
+    font:
+      family: "Raleway"
+      size: 16px
+      weight: 500
+      style: normal
+  &-docs
+    margin-bottom: 50px
+    &__item
+      margin-bottom: 16px
+      display: flex
+      justify-content: flex-start
+    &__link
+      color: #FFFFFF
+      line-height: 160%
+      letter-spacing: 0.01em
+      transition: all 0.5s ease
+      font:
+        family: "Raleway"
+        size: 16px
+        weight: 500
+      &::after
+        content: ''
+        transition: all 0.5s ease
+        display: block
+        width: 0
+        height: 2px
+        background-color: #FFFFFF
+        margin-top: 2px
+      &:hover
+        &::after
+          content: ''
+          display: block
+          width: 100%
+  &-social
+    margin-bottom: 106px
+    &__list
+      display: flex
+    &__item
+      margin-right: 50px
+
+      &:last-child
+        margin-right: 0
+    &__link
+
+      display: flex
+      justify-content: center
+      align-items: center
+
+  &-rights
+    display: flex
+    &__copyright
+      margin-right: 50px
+  &-rights__copyright, &-date-from, &-date-line, &-date-to
+    letter-spacing: 0.01em
+    line-height: 19px
+    color: #FFFFFF
+    font:
+      family: "Raleway"
+      size: 16px
+      weight: normal
+    font-feature-settings: 'pnum' on, 'lnum' on
+  &-dev
+    display: flex
+    justify-content: center
+    &__item
+      margin-bottom: 10px
+      display: flex
+
+    &__item, &__link
+      letter-spacing: 0.01em
+      line-height: 160%
+      color: #3E4D65
+      font:
+        family: "Raleway"
+        size: 16px
+        weight: 400
+    &__link
+      transition: all 0.5s ease
+      &::after
+        content: ""
+        width: 0
+        height: 2px
+        margin-top: 2px
+        background-color: #3E4D65
+        display: block
+        transition: all 0.5s ease
+
+      &:hover
+        &::after
+          content: ""
+          width: 100%
+
+
+// Форма заказа
+
+.footer
+  &-form
+    width: 100%
+    max-width: 376px
+    min-height: 641px
+    border-radius: 30px
+    box-shadow: -1px 0 3px rgba(122, 122, 122, 0.5)
+    position: absolute
+    z-index: 2
+    right: -112px
+    &-wrapper
+      background-color: #61A3D4
+      border-radius: 30px
+      box-shadow: -1px 0 3px rgba(122, 122, 122, 0.5)
+      border: 5px solid #F6FBFF
+      padding: 83px 28px
+    &__title
+      letter-spacing: 0.01em
+      line-height: 130%
+      color: #FFFFFF
+      margin-bottom: 55px
+      font:
+        weight: 500
+        size: 25px
+    &_small
+      color: #FFFFFF
+      letter-spacing: 0.01em
+      line-height: 160%
+      display: block
+      margin-bottom: 40px
+      font:
+        family: "Raleway"
+        weight: 500
+        size: 16px
+
+  &-order
+    &__form
+      display: flex
+      flex-direction: column
+    &__input
+      border: none
+      background-color: transparent
+      border-bottom: 1px solid #FFFFFF
+      padding: 7px
+      padding-left: 0
+      margin-bottom: 33px
+      &:last-child
+        margin-bottom: 0
+      &::placeholder
+        color: #FFFFFF
+        letter-spacing: 0.01em
+        line-height: 160%
+        font:
+          family: "Raleway"
+          size: 16px
+          weight: 500
+      &:focus
+        transition: all 0.5s ease
+        outline: none
+        border-bottom-color: #3E4D65
+        &::placeholder
+          color: #3E4D65
+    &__button
+      padding: 14px 90px
+      border: none
+      background-color: #FFFFFF
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25)
+      border-radius: 5px
+      line-height: 21px
+      letter-spacing: 0.01em
+      text-align: center
+      color: #3E4D65
+      margin-bottom: 35px
+      transition: all 0.5s ease
+      font:
+        size: 17px
+        weight: 500
+      &:hover
+        cursor: pointer
+        background-color: #61A3D4
+        color: #FFFFFF
+
+    &__block
+      display: flex
+      align-items: flex-start
+
+    &__checkbox-confidential
+      opacity: 0
+      z-index: -999
+      position: absolute
+
+    &__label-confidential
+      color: #FFFFFF
+      line-height: 170%
+      font:
+        family: "Raleway"
+        weight: 400
+        size: 15px
+      &:hover
+        cursor: pointer
+        color: #3E4D65
+
+    &__custom-checkbox
+      width: 15px
+      height: 15px
+      border: 1px solid #FFFFFF
+      border-radius: 5px
+      margin-top: 6px
+      margin-right: 12px
+
+    &__checkbox-confidential:checked
+      ~.footer-order__custom-checkbox
+        background-image: url("../img/icons/check_white.svg")
+        background-position: center center
+        background-size: 8px 5px
+        background-repeat: no-repeat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

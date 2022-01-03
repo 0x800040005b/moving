@@ -1,0 +1,66 @@
+.calculate
+  background-color: #F6FBFF
+  padding: 41px 0 29px 0
+
+  &-wrapper
+    padding: 63px 0 52px 0
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.35)
+
+  &-content
+    &__title
+      text-align: center
+      margin-bottom: 30px
+      font-size: 18px
+      font-weight: 500
+      color: $title-color
+.percent
+  font-size: 20px
+  color: #E41818
+
+.content-form
+
+  display: flex
+  flex-direction: column
+  &-block
+    display: flex
+    justify-content: center
+    position: relative
+    margin-bottom: 30px
+    &_input
+      position: relative
+      &::before
+        content: ''
+        background-image: url("../img/calculate/icon-street.svg")
+        background-position: center center
+        background-size: contain
+        background-repeat: no-repeat
+        width: 17px
+        height: 22px
+
+        position: absolute
+        top: 50%
+        left: 40px
+        transform: translateY(-50%)
+
+
+
+  &__input
+    margin-right: 50px
+    padding: 13px 13px 13px 70px
+    &:focus
+      outline: none
+      &::placeholder
+        color: #2C9AEC
+
+  &__submit
+    padding: 14px 71px
+    align-self: flex-end
+    color: #FFFFFF
+    background-color: #87BEE7
+    border: none
+    border-radius: 5px
+    transition: all 0.5s ease
+    &:hover
+      background-color: #FFFFFF
+      color: #61A3D4
+      cursor: pointer
