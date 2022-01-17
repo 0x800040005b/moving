@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
     let footerFormCustomCheckbox = document.querySelector('#footer-order__custom-checkbox'),
         footerFormCheckbox = document.querySelector('#footer-order__checkbox-confidential');
+
 
 
     //checkbox in footerFormOrder
@@ -27,5 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
     }
+
+    const slider = new Swiper(".swiper",{
+        loop: true,
+        navigation: {
+            nextEl: '.button-slider-next',
+            prevEl: '.button-slider-prev',
+        },
+        slidesPerView: "auto",
+
+    });
 
 });

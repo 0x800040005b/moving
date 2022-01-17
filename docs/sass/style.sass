@@ -93,6 +93,34 @@ hml, body
     justify-content: center
     align-items: center
     flex-direction: column
+.arrow-pos
+  position: relative
+
+.button-slider
+  &-prev, &-next
+    width: 40px
+    height: 40px
+    border: 1px solid #2C9AEC
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 5
+    &:hover
+      cursor: pointer
+  &-prev
+    left: -50px
+  &-next
+    right: -50px
+.swiper
+  &-slide
+    margin: 0 auto
+
+
+
 
 
 
